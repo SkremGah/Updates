@@ -1,0 +1,1622 @@
+repeat
+	task.wait()
+until game:IsLoaded()
+
+
+
+local averageGameTime = 1.5 --In minutes
+
+
+
+local function Rejoin(reason)
+
+	reason = reason or 'Game timed out!'
+
+	game:GetService('TeleportService'):Teleport(8267733039, game.Players.LocalPlayer)
+
+end 
+
+
+
+local FailTime = averageGameTime * 60 
+
+
+
+task.spawn(function()
+
+	task.wait(FailTime+100)
+
+	Rejoin('Game Timeout! \nThis could be due to incorrect game time settings or the script breaking')
+
+end)
+
+
+
+local getconnections = getconnections or get_signal_cons
+
+if getconnections then
+
+	for i,v in pairs(getconnections(game.Players.LocalPlayer.Idled)) do
+
+		if v["Disable"] then
+
+			v["Disable"](v)
+
+		elseif v["Disconnect"] then
+
+			v["Disconnect"](v)
+
+		end
+
+	end
+
+end
+
+
+
+game.Players.LocalPlayer.Idled:Connect(function(time)
+
+	game:GetService("VirtualUser"):ClickButton2(Vector2.new())
+
+end)
+
+
+
+local Dir = game:GetService("CoreGui"):WaitForChild("RobloxPromptGui"):WaitForChild("promptOverlay")
+
+Dir.DescendantAdded:Connect(function(Err)
+
+	task.wait()
+
+	msg = Err:FindFirstChild('MessageArea'):FindFirstChild('ErrorFrame'):FindFirstChild('ErrorMessage').Text or 'Could not fetch error!'
+
+	Rejoin('**Roblox error message:**\n\n'..msg)
+
+end)
+
+
+
+if #Dir:GetChildren()>0 then
+
+	local Err = Dir:GetChildren()[1]
+
+	task.wait()
+
+	msg = Err:FindFirstChild('MessageArea'):FindFirstChild('ErrorFrame'):FindFirstChild('ErrorMessage').Text or 'Could not fetch error!' 
+
+	Rejoin('**Roblox error message:**\n\n'..msg)
+
+end
+
+
+
+local Optionz = getgenv().Options
+
+
+
+local HttpService = game:GetService("HttpService")
+
+local SendRequest = http_request or request or HttpPost or (syn and syn.queue_on_teleport)
+
+
+
+local function FormatTime(Seconds)
+
+	local minutes = math.floor(Seconds / 60)
+
+	local seconds = Seconds % 60
+
+	return string.format("%d:%02d", minutes, seconds)
+
+end
+
+
+
+function NewWebhook(Link)
+
+	local Data = {
+
+		WebhookLink = Link,
+
+		WebhookData = {
+
+			embeds = {}
+
+		}
+
+	}
+
+
+
+	local Webhook = {}
+
+
+
+	function Webhook.AddMessage(Message)
+
+		if Message then
+
+			Data.WebhookData.content = Message
+
+		end
+
+		return Webhook
+
+	end
+
+
+
+	function Webhook.Profile(Username, Avatar)
+
+		Username = Username or "Not Specified"
+
+		Avatar = Avatar or ""
+
+
+
+		Data.WebhookData.username = Username
+
+		Data.WebhookData.avatar_url = Avatar
+
+
+
+		return Webhook
+
+	end
+
+
+
+	function Webhook:CreateEmbed()
+
+		local NewEmbed = {}
+
+		table.insert(Data.WebhookData.embeds, NewEmbed)
+
+		local EmbedFunctions = {}
+
+
+
+		function EmbedFunctions.AddTitle(title)
+
+			if title then
+
+				NewEmbed.title = title
+
+			end
+
+			return EmbedFunctions
+
+		end
+
+
+
+		function EmbedFunctions.AddDescription(description)
+
+			if description then
+
+				NewEmbed.description = description
+
+			end
+
+			return EmbedFunctions
+
+		end
+
+
+
+		function EmbedFunctions.AddColor(Color)
+
+			Color = Color or "#00ff52"
+
+			NewEmbed.color = Color
+
+			return EmbedFunctions
+
+		end
+
+
+
+		function EmbedFunctions.AddAuthor(Name, Link, Icon)
+
+			NewEmbed.author = {}
+
+			if Name then
+
+				NewEmbed.author.name = Name
+
+			end
+
+			if Link then
+
+				NewEmbed.author.url = Link
+
+			end
+
+			if Icon then
+
+				NewEmbed.author.icon_url = Icon
+
+			end
+
+			return EmbedFunctions
+
+		end
+
+
+
+		function EmbedFunctions.AddField(Name, Value, Inline)
+
+			NewEmbed.fields = NewEmbed.fields or {}
+
+			local Field = {}
+
+			Field["name"] = Name
+
+			Field["value"] = Value
+
+			if Inline ~= nil then
+
+				Field["inline"] = Inline
+
+			else
+
+				Field["inline"] = true
+
+			end
+
+			table.insert(NewEmbed.fields, Field)
+
+			return EmbedFunctions
+
+		end
+
+
+
+		function EmbedFunctions.AddImage(Link)
+
+			NewEmbed.image = {}
+
+			if Link then
+
+				NewEmbed.image.url = Link
+
+			end
+
+			return EmbedFunctions
+
+		end
+
+
+
+		function EmbedFunctions.AddThumbnail(Link)
+
+			NewEmbed.thumbnail = {}
+
+			if Link then
+
+				NewEmbed.thumbnail.url = Link
+
+			end
+
+			return EmbedFunctions
+
+		end
+
+
+
+		function EmbedFunctions.AddFooter(Text, Icon)
+
+			NewEmbed.footer = {}
+
+			if Text then
+
+				NewEmbed.footer.text = Text
+
+			end
+
+			if Icon then
+
+				NewEmbed.footer.icon_url = Icon
+
+			end
+
+			return EmbedFunctions
+
+		end
+
+
+
+		function EmbedFunctions:Send()
+
+			local Request = SendRequest
+
+
+
+			local Respone = Request({
+
+				Url = Data.WebhookLink,
+
+				Method = "POST",
+
+				Headers = {
+
+					["Content-Type"] = "application/json"
+
+				},
+
+				Body = game:GetService("HttpService"):JSONEncode(Data.WebhookData)
+
+			});
+
+
+
+			warn(Respone)
+
+
+
+		end
+
+
+
+		return EmbedFunctions
+
+	end
+
+
+
+	-- // Debugging Function
+
+	function Webhook.GetFormattedData()
+
+		return Data.WebhookData
+
+	end
+
+
+
+	function Webhook:Send()
+
+		local Request = SendRequest
+
+		local Respone = Request({
+
+			Url = Data.WebhookLink,
+
+			Method = "POST",
+
+			Headers = {
+
+				["Content-Type"] = "application/json"
+
+			},
+
+			Body = game:GetService("HttpService"):JSONEncode(Data.WebhookData)
+
+		});
+
+
+
+		warn(Respone)
+
+	end
+
+	return Webhook
+
+end
+
+
+
+
+
+if game.PlaceId == 8267733039 then
+
+
+
+	local Level = string.gsub(game.Players.LocalPlayer.PlayerGui.Home.Frame.PlayerInfo.Level.Text, "%D", "")
+
+	local CleanText = string.gsub(game.Players.LocalPlayer.PlayerGui.Stats.Frame.Content.Prestige.Title.Text, "[^%w%s]", " ")
+
+	local Prestige = string.match(CleanText, "prestige%s+(%d+)")
+
+	local Tier = string.gsub(game.Players.LocalPlayer.PlayerGui.Season.Frame.Content.Progress.Level.Text, "%D", "")
+
+
+
+	local LocalPlayer = game:GetService("Players").LocalPlayer
+
+	local PlayerGui = LocalPlayer.PlayerGui
+
+
+
+	local Errors = {}
+
+
+
+	if Optionz.AutoPrestige == true then
+
+		if tonumber(Level) >= 100 then
+
+			local Success, Error, Idk = game:GetService("ReplicatedStorage").Packages.Knit.Services.PrestigeService.RF.Prestige:InvokeServer()
+
+			repeat task.wait() until Success ~= nil
+
+			if not Success then
+
+				table.insert(Errors, "Failed to prestige:"..Error)
+
+			else
+
+				table.insert(Errors, "Successfully reached prestige " .. Idk.Prestige .. "!")
+
+			end
+
+		end
+
+	end
+	
+	local Unboxed = {}
+	local ToSend = {}
+	if Optionz.AutoPurchase.Crate ~= "" then
+		local Continue = true
+		
+		repeat 
+			task.wait(1)
+			local Case = Optionz.AutoPurchase.Crate
+			local Value, Won = game:GetService("ReplicatedStorage").Packages.Knit.Services.CaseService.RF.PurchaseCase:InvokeServer(Case)
+			repeat task.wait() until Value ~= nil
+			Continue = Value
+			if Value == true then
+			table.insert(Unboxed, Won["WinningItem"][1]..", "..Won["WinningItem"][2])
+			end
+		until Continue == false
+	end
+
+
+	local Link = Optionz.Webhook.Link
+
+	if Link ~= "" and SendRequest ~= nil then
+
+		local Webhook = NewWebhook(Link)
+
+		Webhook.AddMessage("")
+
+
+
+		local Embed = Webhook:CreateEmbed()
+
+		local GameInfo = false
+
+		local SaveFile = if isfile("StuffToSave.txt") == true then readfile("StuffToSave.txt") else {}
+
+		if SaveFile ~= {} then 
+
+			SaveFile = HttpService:JSONDecode(SaveFile)
+
+		end
+
+
+
+		Embed.AddTitle("**Specter Stat Tracker**")
+
+		Embed.AddFooter(`{os.date("%X")} {os.date("%x")}`)
+
+		Embed.AddField("----------------- PLAYER INFO ---------------","", false)
+
+		Embed.AddField("Username:", (Optionz.Webhook.HideIdentity and "Anon") or LocalPlayer.Name)
+
+		Embed.AddField("Display Name:", (Optionz.Webhook.HideIdentity and "Anon") or LocalPlayer.DisplayName)
+
+		Embed.AddField("Level:", Level.." :chart_with_upwards_trend:")
+
+		Embed.AddField("Prestige", Prestige)
+
+		Embed.AddField("Cash:", PlayerGui.Home.Frame.PlayerInfo.Cash.Text.." :money_with_wings:")
+
+		Embed.AddField("Exp:", PlayerGui.Home.Frame.PlayerInfo.Progress.Text.." :star:")
+
+		if Optionz.Webhook.SeasonPass == true then
+
+			Embed.AddField("Season Pass Tier:", Tier.." :ticket:")
+
+			Embed.AddField("Season Pass Exp:", PlayerGui.Season.Frame.Content.Progress.XP.Text.." :star:")
+
+			if PlayerGui.HUD.Topbar.Buttons.Event.Visible == true and PlayerGui.Event.Frame.Header.EventCurrency.EventCurrency.Visible == true then
+
+				Embed.AddField(PlayerGui.Results.Frame.General.Earnings.Total.EventCurrency.Desc.Text..":", PlayerGui.Event.Frame.Header.EventCurrency.EventCurrency.Text.. " :tickets:")
+
+			end
+
+		end
+
+
+
+		local Count = 0
+
+		for i , v in next,SaveFile do
+
+			Count += 1
+
+		end
+
+
+
+		if Count ~= 0 then
+
+			if GameInfo == false then
+
+				Embed.AddField("----------------- GAME INFO ---------------","", false)
+
+				if Optionz.FunnyToggle == true then
+
+					Embed.AddField("Test:", tostring(getgenv().Guess))
+
+				end
+
+				GameInfo = true
+
+			end
+
+		end
+
+
+
+		if getgenv().Guess == true then
+
+			if Optionz.Webhook.SendGuess == true then
+
+				if SaveFile.Guess ~= nil then
+
+					Embed.AddField("Guess: ",SaveFile.Guess)
+
+				end
+
+			end
+
+			if Optionz.Webhook.SendResult == true then
+
+				local UncleanText = PlayerGui.Results.Frame.General.Guess.Text
+
+				local CleanText = string.gsub(UncleanText, '.*<b>(.-)</b>.*', '%1')		
+
+				Embed.AddField("Correct Ghost: ",CleanText)
+
+				Embed.AddField("Money Made:", PlayerGui.Results.Frame.General.Earnings.Total.Total.Val.Text.. " :money_with_wings:")
+
+				if Optionz.Webhook.SeasonPass == true then
+
+					Embed.AddField(PlayerGui.Results.Frame.General.Earnings.Total.EventCurrency.Desc.Text.." Won:", PlayerGui.Results.Frame.General.Earnings.Total.EventCurrency.Val.Text.. " :tickets:")
+
+				end
+
+				Embed.AddField("Multiplier:", PlayerGui.Results.Frame.General.Earnings.Total.Multiplier.Val.Text)
+
+				local ObjectivesCompleted = 0
+
+				local MaxObjectives = 0
+
+				for i , Objective in next,PlayerGui.Results.Frame.General.Earnings.Objectives:GetChildren() do
+
+					if Objective:IsA("Frame") then
+
+						MaxObjectives = MaxObjectives + 1
+
+						if Objective.Val.Text ~= "$0" then
+
+							ObjectivesCompleted = ObjectivesCompleted + 1
+
+						end
+
+					end
+
+				end
+
+				Embed.AddField("Objectives Completed:", ObjectivesCompleted.."/"..MaxObjectives.. " :white_check_mark:")
+
+			end
+
+			if Optionz.Webhook.LogTime then
+
+				if SaveFile.Time ~= nil then
+
+					Embed.AddField("Time: ", SaveFile.Time.." :hourglass:")
+
+				end
+
+			end
+
+			if Optionz.FunnyToggle == true then
+
+				for i , Error in next,Errors do
+
+					Embed.AddField("Misc: ", Error)
+
+				end
+
+			end
+
+		end
+
+			
+			if Optionz.AutoPurchase.SendToHook == true then
+				if #Unboxed ~= 0 then
+					Embed.AddField("----------------- UNBOXED ---------------","", false)
+
+for i , v in next, Unboxed do
+    ToSend[v] = (ToSend[v] and ToSend[v] + 1) or 1
+end
+
+for i , v in next, ToSend do 
+    local Got = i.." "..v.."x"
+    Embed.AddField(Got, "")
+end
+				end
+			end
+			
+			if Optionz.SendImageOfKrnlChan == true then
+				Embed.AddImage("https://media.discordapp.net/attachments/1264588129315196979/1320180898141962280/h4cz64gai1w71.jpg")
+			end
+			
+		Webhook:Send()
+
+		task.wait(2)
+
+	end
+
+
+
+	local RF = game:GetService("ReplicatedStorage").Packages.Knit.Services.LobbyService.RF
+
+
+
+	RF.CreateLobby:InvokeServer(LocalPlayer.Name.."'s Lobby", 1, 0, "Public")
+
+	task.wait(0.2)
+
+	RF.AddEquipmentToLobby:InvokeServer("Book",1)
+
+	task.wait(0.2)	
+
+	RF.ChangeValue:InvokeServer("Difficulty", "Insanity")
+
+	task.wait(0.2)
+
+	RF.ChangeValue:InvokeServer("Map", "Asylum")
+
+	task.wait(0.2)
+
+	RF.AttemptStart:InvokeServer()
+
+
+
+elseif game.PlaceId == 8417221956 then
+
+
+
+	local EvidenceTable = {
+
+		SelectedEvidences = {}, 
+
+		RemovedEvidences = {}, 
+
+		SelectedGhost = nil, 
+
+		InvalidGhosts = {}, 
+
+	}
+
+
+
+	local Ghosts = {
+
+		["Demon"] = { "Writing", "Spirit Box", "Freezing Temperature" },
+
+		["Banshee"] = { "EMF 5", "Fingerprints", "Freezing Temperature" },
+
+		["Mare"] = { "Freezing Temperature", "Spirit Box", "Orbs" },
+
+		["Wendigo"] = { "Motion", "Spirit Box", "Freezing Temperature" },
+
+		["Spirit"] = { "Writing", "Fingerprints", "Spirit Box" },
+
+		["Poltergeist"] = { "Spirit Box", "Fingerprints", "Orbs" },
+
+		["Phantom"] = { "Freezing Temperature", "Orbs", "EMF 5" },
+
+		["Jinn"] = { "EMF 5", "Motion", "Orbs" },
+
+		["Revenant"] = { "EMF 5", "Writing", "Fingerprints" },
+
+		["Shade"] = { "EMF 5", "Writing", "Orbs" },
+
+		["Yurei"] = { "Freezing Temperature", "Writing", "Orbs" },
+
+		["Oni"] = { "Motion", "Writing", "Spirit Box" },
+
+		["Upyr"] = { "EMF 5", "Freezing Temperature", "Motion" },
+
+		["Egui"] = { "Orbs", "Writing", "Spirit Box" },
+
+		["Wisp"] = { "Orbs", "Fingerprints", "Writing" },
+
+		["Aswang"] = { "EMF 5", "Fingerprints", "Spirit Box" },
+
+		["Thaye"] = { "Orbs", "Fingerprints", "Freezing Temperature" },
+
+		["O Tokata"] = { "EMF 5", "Fingerprints", "Orbs" },
+
+		["Myling"] = { "Motion", "EMF 5", "Spirit Box" },
+
+		["Afarit"] = { "Motion", "Freezing Temperature", "Orbs" },
+
+		["Douen"] = { "Motion", "Fingerprints", "Writing" },
+
+		["Preta"] = { "Motion", "EMF 5", "Fingerprints" },
+
+		["Yokai"] = { "Motion", "Freezing Temperature", "Fingerprints" },
+
+		["Wraith"] = { "Motion", "Writing", "EMF 5" }
+
+	}
+
+
+
+	local GotEvidence = function(Evidence)
+
+		warn(Evidence)
+
+		if table.find(EvidenceTable.SelectedEvidences, Evidence) then
+
+			table.remove(EvidenceTable.SelectedEvidences, table.find(EvidenceTable.SelectedEvidences, Evidence));
+
+		elseif #EvidenceTable.SelectedEvidences < 3 then
+
+			table.insert(EvidenceTable.SelectedEvidences, Evidence);
+
+			if table.find(EvidenceTable.RemovedEvidences, Evidence) then
+
+				table.remove(EvidenceTable.RemovedEvidences, table.find(EvidenceTable.RemovedEvidences, Evidence));
+
+			end;
+
+		end;
+
+
+
+		table.clear(EvidenceTable.InvalidGhosts);
+
+		for v21, v22 in Ghosts do
+
+			for _, v24 in EvidenceTable.SelectedEvidences do
+
+				if not table.find(v22, v24) then
+
+					table.insert(EvidenceTable.InvalidGhosts, v21);
+
+				end;
+
+			end;
+
+			for _, v26 in EvidenceTable.RemovedEvidences do
+
+				if table.find(v22, v26) then
+
+					table.insert(EvidenceTable.InvalidGhosts, v21);
+
+				end;
+
+			end;
+
+		end;
+
+	end
+
+
+
+	local GetGhost = function()
+
+		local Ghost = {}
+
+
+
+		for i , v in next, Ghosts do
+
+			if not table.find(EvidenceTable.InvalidGhosts, i) then
+
+				table.insert(Ghost, i)
+
+			end
+
+		end
+
+
+
+		if #Ghost == 1 then
+
+			Ghost = Ghost[1]
+
+		else
+
+			Ghost = Ghost[math.random(1, #Ghost)]
+
+		end
+
+
+
+		return Ghost
+
+	end
+
+
+
+	local StuffToSave = {}
+
+	local ExecutedAt = tick()
+
+
+
+	task.wait(3)
+
+
+
+	local PickupItem = game:GetService("ReplicatedStorage").Packages.Knit.Services.InventoryService.RF.PickupItem
+
+
+
+	local LocalPlayer = game.Players.LocalPlayer
+
+	local CharRoot = LocalPlayer.Character.PrimaryPart
+
+	local Humanoid = LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+
+	local MS = false
+
+	local Evidence = 0
+
+
+
+	local GhostRoomPosition = nil
+
+	local GotBone = false
+
+
+
+	local EquipSlot = game:GetService("ReplicatedStorage").Packages.Knit.Services.InventoryService.RF.EquipSlot
+
+	local Drop = game:GetService("ReplicatedStorage").Packages.Knit.Services.InventoryService.RF.Drop
+
+	local Place = game:GetService("ReplicatedStorage").Packages.Knit.Services.InventoryService.RF.Place
+
+
+
+	task.spawn(function()
+
+		local Value = game:GetService("ReplicatedStorage").Packages.Knit.Services.GhostService.RF.HasMS:InvokeServer()
+
+		repeat task.wait() until Value ~= nil
+
+		if Value == true then
+
+			GotEvidence("Motion")
+
+			Evidence = Evidence + 1
+
+		end
+
+	end)
+
+
+
+	task.spawn(function()
+
+		repeat task.wait() until workspace.NPCs:FindFirstChildOfClass("Model") ~= nil
+
+
+
+		while true do
+
+			task.wait()
+
+			workspace.NPCs:FindFirstChildOfClass("Model").HumanoidRootPart.Transparency = 0
+
+			task.wait(3)
+
+			if not workspace.NPCs:FindFirstChildOfClass("Model"):FindFirstChildOfClass("Highlight") then
+
+				local Highlight = Instance.new("Highlight", workspace.NPCs:FindFirstChildOfClass("Model"))
+
+			end
+
+		end	
+
+	end)
+
+
+
+	local EMF5 = false
+
+	local Fingerprints = false
+
+	local Orbs = false
+
+	local Writing = false
+
+	local Freezing = false
+
+	local SpiritBox = false
+
+
+
+
+
+	local EMF5Connection : RBXScriptConnection
+
+	local FingerPrintsConnection : RBXScriptConnection
+
+	local OrbsConnection : RBXScriptConnection
+
+	EMF5Connection = workspace.Dynamic.Evidence.EMF.ChildAdded:Connect(function(Child)
+
+		if Child.Name == "EMF5" then
+
+			GotEvidence("EMF 5")
+
+			Evidence += 1
+
+			EMF5Connection:Disconnect()
+
+		end
+
+	end)
+
+	FingerPrintsConnection = workspace.Dynamic.Evidence.Fingerprints.ChildAdded:Connect(function(Child)
+
+		GotEvidence("Fingerprints")
+
+		Evidence += 1
+
+		FingerPrintsConnection:Disconnect()
+
+	end)
+
+	OrbsConnection = workspace.Dynamic.Evidence.Orbs.ChildAdded:Connect(function(c)
+
+		GotEvidence("Orbs")
+
+		Evidence += 1
+
+		OrbsConnection:Disconnect()
+
+	end)
+
+
+
+	workspace.Map.Doors:ClearAllChildren()
+
+
+
+	EquipSlot:InvokeServer(1) 
+
+	task.wait(0.5)
+
+	Drop:InvokeServer(1)
+
+
+
+	workspace.Map.Bone.Bone.HoldDuration = 0.05
+
+	workspace.Map.Bone.Bone.RequiresLineOfSight = false
+
+	workspace.Van.Close.Toggle.HoldDuration = 0.05
+
+	task.wait(1)
+
+
+
+	CharRoot.CFrame = CFrame.new(565.313, 8.15, -706.725)
+
+	task.wait(0.25)
+
+	workspace.Van.Close.CFrame = CFrame.new(CharRoot.Position + Vector3.new(0,1.5,0) + CharRoot.CFrame.LookVector * 3.2)
+
+	for i=1, 5 do
+
+		workspace.Van.Close.Toggle.RequiresLineOfSight = false
+
+		fireproximityprompt(workspace.Van.Close.Toggle)
+
+		task.wait(0.3)
+
+	end
+
+
+
+	task.wait(0.4)
+
+
+
+	CharRoot.CFrame = workspace.Van.Equipment:FindFirstChild("Book"):GetPrimaryPartCFrame()
+
+	task.wait(0.2)
+
+	PickupItem:InvokeServer(workspace.Van.Equipment:FindFirstChild("Book"))
+
+
+
+	task.wait(0.6)
+
+
+
+	CharRoot.CFrame = workspace.Van.Equipment:FindFirstChild("Book"):GetPrimaryPartCFrame()
+
+	task.wait(0.2)
+
+	PickupItem:InvokeServer(workspace.Van.Equipment:FindFirstChild("Book"))
+
+
+
+	task.wait(0.6)
+
+
+
+	EquipSlot:InvokeServer(2)
+
+
+
+	task.wait(0.6)
+
+
+
+	repeat task.wait() until workspace.ServerNPCs:FindFirstChild("ServerNPC") ~= nil
+
+	local ServerNPC = workspace.ServerNPCs.ServerNPC
+
+
+
+	local function RegisterBook(Book)
+
+		if Book.Name == "Book" then
+
+			Book:WaitForChild("LeftPage").ChildAdded:Connect(function()
+
+				if Writing == false then
+
+					Writing = true
+
+					GotEvidence("Writing")
+
+					Evidence += 1
+
+				end
+
+			end)
+
+		end
+
+	end
+
+
+
+	for i , v in ipairs(workspace.Equipment:GetChildren()) do
+
+		RegisterBook(v)
+
+	end
+
+
+
+	workspace.Equipment.ChildAdded:Connect(function(Child)
+
+		RegisterBook(Child)
+
+	end)
+
+
+
+	task.delay(140, function()
+
+		Writing = true
+
+		GotEvidence("Writing")
+
+		Evidence += 1
+
+	end)
+
+
+
+	repeat task.wait() until ServerNPC:GetAttribute("Position") ~= nil
+
+
+
+	local GhostServerPosition = ServerNPC:GetAttribute("Position")
+
+	GhostRoomPosition = GhostServerPosition
+
+
+
+	task.wait(1)
+
+
+
+	local args = {
+
+		[1] = 2,
+
+		[2] = CFrame.new(GhostServerPosition),
+
+		[3] = workspace
+
+	}
+
+
+
+	CharRoot.CFrame = args[2] * CFrame.new(0,5,0)
+
+
+
+	task.wait(0.65)
+
+
+
+	Place:InvokeServer(unpack(args))
+
+
+
+	task.wait(0.6)
+
+
+
+	EquipSlot:InvokeServer(1)
+
+
+
+	task.wait(0.6)
+
+
+
+	local GhostServerPosition = ServerNPC:GetAttribute("Position")
+
+	local args = {
+
+		[1] = 1,
+
+		[2] = CFrame.new(GhostServerPosition),
+
+		[3] = workspace
+
+	}
+
+
+
+	CharRoot.CFrame = args[2] * CFrame.new(0,5,0)
+
+
+
+	task.wait(0.65)
+
+
+
+	Place:InvokeServer(unpack(args))
+
+
+
+	task.wait(0.6)
+
+
+
+
+
+
+
+	if workspace.Map:FindFirstChild("Bone") ~= nil then
+
+		CharRoot.CFrame = CFrame.new(workspace.Map.Bone.Position + Vector3.new(0,2,0))
+
+		task.wait(0.1)
+
+		CharRoot.Anchored = true
+
+	end
+
+
+
+
+
+	repeat 
+
+		task.wait(0.3)
+
+		if workspace.Map:FindFirstChild("Bone") ~= nil then
+
+			workspace.Map:FindFirstChild("Bone").CFrame = CFrame.new(CharRoot.Position + Vector3.new(0,1.5,0) + CharRoot.CFrame.LookVector * 3.2)
+
+			fireproximityprompt(workspace.Map.Bone.Bone)
+
+		end
+
+		if workspace.Map:FindFirstChild("Bone") == nil then
+
+			GotBone = true
+
+		end
+
+	until GotBone == true
+
+
+
+	CharRoot.Anchored = false
+
+	task.wait(0.6)
+
+
+
+	CharRoot.CFrame = workspace.Van.Spawn.CFrame * CFrame.new(0,5,0)
+
+	task.wait(2)
+
+
+
+
+
+	CharRoot.CFrame = workspace.Van.Equipment:FindFirstChild("EMF Reader"):GetPrimaryPartCFrame()
+
+	task.wait(0.2)
+
+	PickupItem:InvokeServer(workspace.Van.Equipment:FindFirstChild("EMF Reader"))
+
+	task.wait(0.6)
+
+	CharRoot.CFrame = workspace.Van.Equipment:FindFirstChild("Thermometer"):GetPrimaryPartCFrame()
+
+	task.wait(0.2)
+
+	PickupItem:InvokeServer(workspace.Van.Equipment:FindFirstChild("Thermometer"))
+
+	task.wait(0.6)
+
+	CharRoot.CFrame = workspace.Van.Equipment:FindFirstChild("Spirit Box"):GetPrimaryPartCFrame()
+
+	task.wait(0.2)
+
+	PickupItem:InvokeServer(workspace.Van.Equipment:FindFirstChild("Spirit Box"))
+
+	task.wait(0.6)
+
+	EquipSlot:InvokeServer(1)
+
+	task.wait(0.6)
+
+
+
+	task.spawn(function()
+
+		local a = game:GetService("ReplicatedStorage").Packages.Knit.Services.InventoryService.RF.Toggle:InvokeServer(1)
+
+	end)
+
+
+
+	task.wait(0.9)
+
+
+
+	CharRoot.CFrame = CFrame.new(GhostRoomPosition + Vector3.new(0,3,0))
+
+
+	task.wait(4.5)
+
+
+
+	-- 14/12/2024, 23:13, I witnessed something ungodly, I'm sorry for ever existing, I hope the gods will forgive me.
+
+
+
+	if CharRoot.Parent.EquipmentModel:WaitForChild("Main"):WaitForChild("EMF 2").Volume == 0 then
+
+		task.wait(4)
+
+		if CharRoot.Parent.EquipmentModel:WaitForChild("Main"):WaitForChild("EMF 2").Volume == 0 then
+
+			for i , Room in ipairs(workspace.Map.Rooms:GetChildren()) do
+
+				if Room.Hitbox then
+
+					CharRoot.CFrame = CFrame.new(Room.Hitbox.CFrame.Position)
+
+					task.wait(0.5)
+
+					if CharRoot.Parent.EquipmentModel:WaitForChild("Main"):WaitForChild("EMF 2").Volume ~= 0 then
+
+						break
+
+					end
+
+				end
+
+			end
+
+		end
+
+	end
+
+
+
+	EquipSlot:InvokeServer(2)
+
+	task.wait(0.75)
+
+	task.spawn(function()
+
+		game:GetService("ReplicatedStorage").Packages.Knit.Services.InventoryService.RF.Toggle:InvokeServer(2)
+
+	end)
+
+	local Temperature = string.gsub(CharRoot.Parent.EquipmentModel:WaitForChild("Temp").SurfaceGui.TextLabel.Text, "[^0-9%.%-]", "")
+
+	local FreezingDebounce = true
+
+	task.spawn(function()
+
+		repeat
+
+			task.wait(0.2)
+
+			Temperature = string.gsub(CharRoot.Parent.EquipmentModel:WaitForChild("Temp").SurfaceGui.TextLabel.Text, "[^0-9%.%-]", "")
+
+			warn(Temperature)
+
+		until FreezingDebounce == false
+
+	end)
+
+
+
+	repeat task.wait() until Temperature ~= "----"
+
+	repeat task.wait() until Temperature ~= ""
+
+	repeat task.wait() until Temperature ~= nil
+
+
+
+	task.wait(4)
+
+
+
+	repeat task.wait() until Temperature ~= "----"
+
+	repeat task.wait() until Temperature ~= ""
+
+	repeat task.wait() until Temperature ~= nil
+
+
+
+	if tonumber(Temperature) < 0 then
+
+		GotEvidence("Freezing Temperature")
+
+		Evidence += 1
+
+	end
+
+
+
+	FreezingDebounce = false
+
+
+
+	task.wait(0.6)
+
+	EquipSlot:InvokeServer(3)
+
+	task.wait(0.7)
+
+
+
+	task.spawn(function()
+
+		game:GetService("ReplicatedStorage").Packages.Knit.Services.InventoryService.RF.Toggle:InvokeServer(3)
+
+	end)
+
+
+
+	local Attempts = Instance.new("NumberValue");Attempts.Value = 0
+
+	local GiveUp = false
+
+
+
+	task.wait(0.2)
+
+
+
+	Attempts.Changed:Connect(function(Value)
+
+		if Value > 20 then
+
+			GiveUp = true
+
+		end
+
+	end)
+
+
+
+	CharRoot.Parent.EquipmentModel:WaitForChild("Main").ChildAdded:Connect(function(Child)
+
+		if Child:IsA("BillboardGui") then
+
+			GotEvidence("Spirit Box")
+
+			Evidence += 1
+
+			GiveUp = true
+
+		end
+
+	end)
+
+
+
+	repeat 
+
+		game:GetService("ReplicatedStorage").Events.SimulateChatEvent:FireServer("Are you there?")
+
+		Attempts.Value += 1
+
+		task.wait(0.8)
+
+	until GiveUp == true
+
+	
+
+	for i , Water in next, workspace.Map.EventObjects.Sinks:GetChildren() do 
+
+		warn(Water.ProximityPrompt.Enabled)
+
+		if Water.ProximityPrompt.Enabled == true then
+
+			Water.ProximityPrompt.HoldDuration = 0.05
+
+			Water.ProximityPrompt.RequiresLineOfSight = false
+
+			task.wait(0.7)
+
+			CharRoot.CFrame = CFrame.new(Water.Position + Vector3.new(0,2,0))
+
+			task.wait(0.1)
+
+			CharRoot.Anchored = true
+
+			repeat 
+
+				task.wait(0.3)
+
+				Water.CFrame = CFrame.new(CharRoot.Position + Vector3.new(0,1.5,0) + CharRoot.CFrame.LookVector * 3.2)
+
+				fireproximityprompt(Water.ProximityPrompt)
+
+			until Water.ProximityPrompt.Enabled == false
+
+		end
+
+	end
+
+	task.wait(0.4)
+
+	CharRoot.Anchored = false
+
+
+
+	local UpdateGuess = game:GetService("ReplicatedStorage").Packages.Knit.Services.PlayerService.RF.UpdateGuess
+
+	local Guess = "Spirit"
+
+	CharRoot.CFrame = workspace.Van.Spawn.CFrame * CFrame.new(0,5,0)
+
+
+
+	if Evidence == 3 then
+
+		Guess = GetGhost()
+
+		UpdateGuess:InvokeServer(Guess)
+
+	else
+
+		repeat task.wait() until Evidence == 3
+
+		Guess = GetGhost()
+
+		UpdateGuess:InvokeServer(Guess)
+
+	end
+
+
+
+	warn(Guess)
+
+
+
+	if Optionz.Webhook.SendGuess == true then
+
+		StuffToSave["Guess"] = Guess
+
+	end
+
+
+
+	if Optionz.Webhook.LogTime == true then
+
+		local EndedAt = tick() - ExecutedAt
+
+		local Formatted = FormatTime(EndedAt)
+
+		StuffToSave["Time"] = Formatted
+
+	end
+
+
+
+	local Count = 0
+
+	for i , v in next,StuffToSave do
+
+		Count += 1
+
+	end
+
+
+
+	if Count ~= 0 then
+
+		local queueteleport = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus and fluxus.queue_on_teleport)
+
+		if queueteleport then
+
+			queueteleport("while true do task.wait() getgenv().Guess = true end")
+
+
+
+			task.spawn(function()
+
+				while true do
+
+					queueteleport("while true do task.wait() getgenv().Guess = true end")
+
+					task.wait(0.1)
+
+				end
+
+			end)
+
+		end
+
+
+
+		local JSONEncoded = HttpService:JSONEncode(StuffToSave)
+
+		writefile("StuffToSave.txt", JSONEncoded)
+
+	end
+
+
+
+	CharRoot.CFrame = CFrame.new(565.313, 8.15, -706.725)
+
+	task.wait(0.25)
+
+	workspace.Van.Close.CFrame = CFrame.new(CharRoot.Position + Vector3.new(0,1.5,0) + CharRoot.CFrame.LookVector * 3.2)
+
+	while true do
+
+		workspace.Van.Close.Toggle.RequiresLineOfSight = false
+
+		fireproximityprompt(workspace.Van.Close.Toggle)
+
+		task.wait(0.3)
+
+	end
+
+end
