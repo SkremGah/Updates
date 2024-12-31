@@ -1,0 +1,2091 @@
+[
+    {
+        "difficulty": "Elite",
+        "Type": "DifficultyVoteCast"
+    },
+    {
+        "Type": "DifficultyVoteReady"
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "-2.089794158935547, 99.79322814941406, -207.30844116210938",
+        "number4": 0,
+        "unitName": "Shotgunner",
+        "firstNumber": 613.9479049590001
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "-1.1271748542785645, 99.79322814941406, -213.18954467773438",
+        "number4": 0,
+        "unitName": "Shotgunner",
+        "firstNumber": 615.247691251
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 2,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 1,
+        "secondNumber": 2
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "-2.709315299987793, 99.79322814941406, -215.75155639648438",
+        "number4": 0,
+        "unitName": "Shotgunner",
+        "firstNumber": 633.347045993
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 3,
+        "secondNumber": 2
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "-4.295419692993164, 99.79322814941406, -213.1282196044922",
+        "number4": 0,
+        "unitName": "Shotgunner",
+        "firstNumber": 643.0089143920001
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 4,
+        "secondNumber": 2
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "-5.750611305236816, 99.79322814941406, -215.7567596435547",
+        "number4": 0,
+        "unitName": "Shotgunner",
+        "firstNumber": 651.356451126
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 5,
+        "secondNumber": 2
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "-7.304449558258057, 99.79322814941406, -213.08358764648438",
+        "number4": 0,
+        "unitName": "Shotgunner",
+        "firstNumber": 661.453982698
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 6,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 2,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 2,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 2,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 4,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 4,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 4,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 3,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 3,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 3,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 1,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 1,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 1,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 5,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 5,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 5,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 6,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 6,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 6,
+        "secondNumber": 1
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "0.9609441757202148, 99.79322814941406, -207.22940063476562",
+        "number4": 0,
+        "unitName": "Cryo Blaster",
+        "firstNumber": 721.077935052
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 7,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 7,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 7,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 7,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 7,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 7,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 7,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 1,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 1,
+        "secondNumber": 1
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "3.9907937049865723, 99.79322814941406, -207.41558837890625",
+        "number4": 0,
+        "unitName": "Cryo Blaster",
+        "firstNumber": 797.708782225
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 8,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 8,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 8,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 8,
+        "secondNumber": 2
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 8,
+        "secondNumber": 4
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 8,
+        "secondNumber": 3
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 8,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 8,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 8,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 8,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 1,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 2,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 2,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 2,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 3,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 3,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 3,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 4,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 4,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 4,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 5,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 5,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 5,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 6,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 6,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 6,
+        "secondNumber": 1
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "4.768994331359863, 99.79322814941406, -210.327392578125",
+        "number4": 0,
+        "unitName": "Shotgunner",
+        "firstNumber": 893.2403911670001
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 9,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 9,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 9,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 9,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 9,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 9,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 9,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 9,
+        "secondNumber": 1
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "4.847330093383789, 99.79322814941406, -213.53562927246094",
+        "number4": 0,
+        "unitName": "Shotgunner",
+        "firstNumber": 897.4607690720001
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 10,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 10,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 10,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 10,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 10,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 10,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 10,
+        "secondNumber": 2
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "-0.6585330963134766, 99.79322814941406, -204.56524658203125",
+        "number4": 0,
+        "unitName": "Shotgunner",
+        "firstNumber": 901.797978443
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 11,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 11,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 11,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 11,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 11,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 11,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 11,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 11,
+        "secondNumber": 2
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "2.454953193664551, 99.79322814941406, -204.27423095703125",
+        "number4": 0,
+        "unitName": "Shotgunner",
+        "firstNumber": 903.904665924
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 12,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 12,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 12,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 12,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 12,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 12,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 12,
+        "secondNumber": 2
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "-7.760914325714111, 99.79322814941406, -209.89149475097656",
+        "number4": 0,
+        "unitName": "Cryo Blaster",
+        "firstNumber": 907.530928786
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "-7.717277526855469, 99.79322814941406, -206.76100158691406",
+        "number4": 0,
+        "unitName": "Cryo Blaster",
+        "firstNumber": 908.5416420810001
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "-11.011064529418945, 99.79322814941406, -209.71092224121094",
+        "number4": 0,
+        "unitName": "EDJ",
+        "firstNumber": 910.8882980440001
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 15,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 15,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 15,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 15,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 15,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 15,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 15,
+        "secondNumber": 1
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "-10.971375465393066, 99.79322814941406, -206.09725952148438",
+        "number4": 0,
+        "unitName": "EDJ",
+        "firstNumber": 918.1053313460001
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 16,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 16,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 16,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 16,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 16,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 16,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 16,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 16,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 13,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 13,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 13,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 13,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 13,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 13,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 13,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 14,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 14,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 14,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 14,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 14,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 14,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 14,
+        "secondNumber": 2
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "-9.028791427612305, 99.79322814941406, -203.4857635498047",
+        "number4": 0,
+        "unitName": "Cryo Blaster",
+        "firstNumber": 927.145399363
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 17,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 17,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 17,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 17,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 17,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 17,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 17,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 17,
+        "secondNumber": 2
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "-12.059385299682617, 99.79322814941406, -203.0054931640625",
+        "number4": 0,
+        "unitName": "Cryo Blaster",
+        "firstNumber": 929.4394415480001
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 18,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 18,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 18,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 18,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 18,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 18,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 18,
+        "secondNumber": 2
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "-8.88963794708252, 99.79322814941406, -200.3394012451172",
+        "number4": 0,
+        "unitName": "Cryo Blaster",
+        "firstNumber": 932.523788072
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 19,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 19,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 19,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 19,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 19,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 19,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 19,
+        "secondNumber": 2
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 19,
+        "secondNumber": 4
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 19,
+        "secondNumber": 3
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 19,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 19,
+        "secondNumber": 2
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "-12.045012474060059, 99.79322814941406, -199.9572296142578",
+        "number4": 0,
+        "unitName": "Cryo Blaster",
+        "firstNumber": 945.638017027
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 20,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 20,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 20,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 20,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 20,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 20,
+        "secondNumber": 2
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 20,
+        "secondNumber": 4
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 20,
+        "secondNumber": 3
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 20,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 20,
+        "secondNumber": 2
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "-15.078327178955078, 99.79322814941406, -199.99961853027344",
+        "number4": 0,
+        "unitName": "Cryo Blaster",
+        "firstNumber": 961.793285447
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 21,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 21,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 21,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 21,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 21,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 21,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 21,
+        "secondNumber": 2
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 21,
+        "secondNumber": 4
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 21,
+        "secondNumber": 3
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 21,
+        "secondNumber": 2
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "-15.193073272705078, 99.79322814941406, -203.236083984375",
+        "number4": 0,
+        "unitName": "Cryo Blaster",
+        "firstNumber": 964.908010041
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 22,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 22,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 22,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 22,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 22,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 22,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 22,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 22,
+        "secondNumber": 2
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 22,
+        "secondNumber": 4
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 22,
+        "secondNumber": 3
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 22,
+        "secondNumber": 2
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "-14.820775985717773, 99.79322814941406, -206.29042053222656",
+        "number4": 0,
+        "unitName": "Cryo Blaster",
+        "firstNumber": 970.189489845
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 23,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 23,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 23,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 23,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 23,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 23,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 23,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 23,
+        "secondNumber": 2
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 23,
+        "secondNumber": 4
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 23,
+        "secondNumber": 3
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 23,
+        "secondNumber": 2
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "-14.83400821685791, 99.79322814941406, -209.58018493652344",
+        "number4": 0,
+        "unitName": "Cryo Blaster",
+        "firstNumber": 973.453040007
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 24,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 24,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 24,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 24,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 24,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 24,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 24,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 24,
+        "secondNumber": 2
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 24,
+        "secondNumber": 4
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 24,
+        "secondNumber": 3
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 24,
+        "secondNumber": 2
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "-15.007652282714844, 99.79322814941406, -212.81314086914062",
+        "number4": 0,
+        "unitName": "Cryo Blaster",
+        "firstNumber": 976.2288988380001
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 25,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 25,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 25,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 25,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 25,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 25,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 25,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 25,
+        "secondNumber": 2
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 25,
+        "secondNumber": 4
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 25,
+        "secondNumber": 3
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 25,
+        "secondNumber": 2
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "-14.935042381286621, 99.79322814941406, -216.0283966064453",
+        "number4": 0,
+        "unitName": "Cryo Blaster",
+        "firstNumber": 979.3804194270001
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 26,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 26,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 26,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 26,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 26,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 26,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 26,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 26,
+        "secondNumber": 2
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 26,
+        "secondNumber": 4
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 26,
+        "secondNumber": 3
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 26,
+        "secondNumber": 2
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "-10.886194229125977, 99.79322814941406, -213.03036499023438",
+        "number4": 0,
+        "unitName": "Cryo Blaster",
+        "firstNumber": 982.96050056
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 27,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 27,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 27,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 27,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 27,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 27,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 27,
+        "secondNumber": 2
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 27,
+        "secondNumber": 4
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 27,
+        "secondNumber": 3
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 27,
+        "secondNumber": 2
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "-11.478671073913574, 99.79322814941406, -216.0802459716797",
+        "number4": 0,
+        "unitName": "Cryo Blaster",
+        "firstNumber": 986.343593045
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 28,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 28,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 28,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 28,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 28,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 28,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 28,
+        "secondNumber": 2
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "-8.508526802062988, 99.79322814941406, -217.2640838623047",
+        "number4": 0,
+        "unitName": "Cryo Blaster",
+        "firstNumber": 989.0184289580001
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 29,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 29,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 29,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 29,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 29,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 29,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 29,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 29,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 29,
+        "secondNumber": 2
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 29,
+        "secondNumber": 4
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 29,
+        "secondNumber": 3
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 29,
+        "secondNumber": 2
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "-13.36010456085205, 99.79322814941406, -218.6759033203125",
+        "number4": 0,
+        "unitName": "Cryo Blaster",
+        "firstNumber": 991.8994977240001
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 30,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 30,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 30,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 30,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 30,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 30,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 30,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 30,
+        "secondNumber": 2
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "-10.163661003112793, 99.79322814941406, -219.83419799804688",
+        "number4": 0,
+        "unitName": "Cryo Blaster",
+        "firstNumber": 994.2574529310001
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 31,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 31,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 31,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 31,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 31,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 31,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 31,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 31,
+        "secondNumber": 2
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 31,
+        "secondNumber": 4
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 31,
+        "secondNumber": 3
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 31,
+        "secondNumber": 2
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "-9.92520809173584, 99.79322814941406, -197.37310791015625",
+        "number4": 0,
+        "unitName": "Cryo Blaster",
+        "firstNumber": 998.5587732030001
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 32,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 32,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 32,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 32,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 32,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 32,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 32,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 32,
+        "secondNumber": 2
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 32,
+        "secondNumber": 4
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 32,
+        "secondNumber": 3
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 32,
+        "secondNumber": 2
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 32,
+        "secondNumber": 1
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 32,
+        "secondNumber": 2
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "-6.757707118988037, 99.79322814941406, -197.5728759765625",
+        "number4": 0,
+        "unitName": "Cryo Blaster",
+        "firstNumber": 1003.216086503
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 33,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 33,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 33,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 33,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 33,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 33,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 33,
+        "secondNumber": 1
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 33,
+        "secondNumber": 4
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 33,
+        "secondNumber": 3
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 33,
+        "secondNumber": 2
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "-3.558339834213257, 99.79322814941406, -197.73110961914062",
+        "number4": 0,
+        "unitName": "Cryo Blaster",
+        "firstNumber": 1006.4971497900001
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 34,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 34,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 34,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 34,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 34,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 34,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 34,
+        "secondNumber": 2
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 34,
+        "secondNumber": 4
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 34,
+        "secondNumber": 3
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 34,
+        "secondNumber": 4
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 34,
+        "secondNumber": 0
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "-0.6203908920288086, 99.79322814941406, -201.17091369628906",
+        "number4": 0,
+        "unitName": "Cryo Blaster",
+        "firstNumber": 1012.3229686320001
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 35,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 35,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 35,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 35,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 35,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 35,
+        "secondNumber": 2
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 35,
+        "secondNumber": 4
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 35,
+        "secondNumber": 3
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 35,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 35,
+        "secondNumber": 2
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "-0.16181468963623047, 99.79322814941406, -197.92929077148438",
+        "number4": 0,
+        "unitName": "Cryo Blaster",
+        "firstNumber": 1025.187051658
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 36,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 36,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 36,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 36,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 36,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 36,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 36,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 36,
+        "secondNumber": 2
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 36,
+        "secondNumber": 4
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 36,
+        "secondNumber": 3
+    },
+    {
+        "Type": "ChangeQueryType",
+        "firstNumber": 36,
+        "secondNumber": 2
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "-5.754473686218262, 99.79322814941406, -218.80252075195312",
+        "number4": 0,
+        "unitName": "Cryo Blaster",
+        "firstNumber": 1029.950615083
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 37,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 37,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 37,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 37,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 37,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 37,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 37,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 37,
+        "secondNumber": 1
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "8.340001106262207, 99.79322814941406, -211.96746826171875",
+        "number4": 0,
+        "unitName": "Juggernaut",
+        "firstNumber": 1034.070658075
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 38,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 38,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 38,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 38,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 38,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 38,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 38,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 38,
+        "secondNumber": 2
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "7.7974348068237305, 99.79322814941406, -207.57168579101562",
+        "number4": 0,
+        "unitName": "Juggernaut",
+        "firstNumber": 1038.804754347
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 39,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 39,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 39,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 39,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 39,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 39,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 39,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 39,
+        "secondNumber": 2
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "6.2147111892700195, 99.79322814941406, -203.4110870361328",
+        "number4": 0,
+        "unitName": "Juggernaut",
+        "firstNumber": 1045.3511902520002
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 40,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 40,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 40,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 40,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 40,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 40,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 40,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 40,
+        "secondNumber": 2
+    },
+    {
+        "Type": "PlaceTower",
+        "vector": "7.449197769165039, 99.79322814941406, -216.3145751953125",
+        "number4": 0,
+        "unitName": "Juggernaut",
+        "firstNumber": 1052.7132246
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 41,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 41,
+        "secondNumber": 1
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 41,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 41,
+        "secondNumber": 2
+    },
+    {
+        "Type": "TowerUpgradeRequest",
+        "firstNumber": 41,
+        "secondNumber": 2
+    }
+]
